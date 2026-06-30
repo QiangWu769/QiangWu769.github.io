@@ -47,7 +47,7 @@ body {
 }
 
 .photo-card-main {
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 1219 / 1706;
 }
 
 .photo-card img {
@@ -56,8 +56,6 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: center center;
-  transform: translateY(-3%) scale(1.08);
-  transform-origin: center center;
 }
 
 @media (max-width: 520px) {
