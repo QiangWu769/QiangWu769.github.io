@@ -55,7 +55,9 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center center;
+  transform: translateY(-3%) scale(1.08);
+  transform-origin: center center;
 }
 
 @media (max-width: 520px) {
