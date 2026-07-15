@@ -121,6 +121,26 @@ h1 {
   letter-spacing: -0.045em;
 }
 
+.about-copy {
+  max-width: 70ch;
+  font-size: 1.08rem;
+}
+
+.about-copy p {
+  margin: 0;
+}
+
+.about-copy p + p {
+  margin-top: 1em;
+}
+
+.about-copy a {
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.16em;
+}
+
 .news-list {
   margin: 0;
   padding: 0;
