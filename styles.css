@@ -22,7 +22,7 @@ body {
     radial-gradient(circle at 88% 12%, rgba(255, 246, 224, 0.72), transparent 34rem),
     linear-gradient(135deg, #f9f2e4 0%, var(--page-bg) 48%, #f3e4c9 100%);
   color: var(--ink);
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Times New Roman", Times, serif;
   line-height: 1.65;
 }
 
@@ -69,12 +69,6 @@ body {
 .profile-copy {
   border-top: 1px solid var(--line);
   padding-top: 18px;
-}
-
-h1,
-h2,
-h3 {
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
 }
 
 h1 {
