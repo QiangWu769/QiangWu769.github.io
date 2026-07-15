@@ -158,13 +158,13 @@ h1 {
 
 .news-item time {
   align-self: center;
-  justify-self: center;
+  justify-self: start;
   color: var(--accent);
   font-size: 1rem;
   font-weight: 800;
   letter-spacing: 0.035em;
   line-height: 1.2;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   white-space: nowrap;
 }
