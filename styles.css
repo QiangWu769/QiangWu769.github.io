@@ -73,16 +73,6 @@ body {
   padding-top: 18px;
 }
 
-.eyebrow,
-.section-kicker {
-  margin: 0 0 5px;
-  color: var(--accent);
-  font-size: 0.74rem;
-  font-weight: 750;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
 h1,
 h2,
 h3 {
