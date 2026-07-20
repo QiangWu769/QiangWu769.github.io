@@ -231,6 +231,10 @@ h1 {
   min-width: 0;
 }
 
+.publication-title-lead {
+  display: block;
+}
+
 .publication-venue {
   justify-self: end;
   color: #b4342d;
