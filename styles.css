@@ -1,5 +1,5 @@
 :root {
-  --page-bg: #f7f3ea;
+  --page-bg: #faf7f0;
   --ink: #211a15;
   --accent: #8b3d26;
   --line: rgba(33, 26, 21, 0.13);
@@ -20,7 +20,7 @@ body {
 
 body {
   margin: 0;
-  background: linear-gradient(135deg, #fbf8f1 0%, var(--page-bg) 62%, #f4eee2 100%);
+  background: linear-gradient(135deg, #fefcf8 0%, var(--page-bg) 64%, #f8f3ea 100%);
   color: var(--ink);
   font-family: var(--font-body);
   line-height: 1.65;
