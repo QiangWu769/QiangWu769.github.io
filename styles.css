@@ -342,12 +342,6 @@ h1 {
   border-radius: 10px;
   background: var(--panel);
   box-shadow: 0 10px 28px var(--card-shadow);
-  transition: box-shadow 200ms ease, border-color 200ms ease;
-}
-
-.writer-card:hover {
-  border-color: var(--accent-border-soft);
-  box-shadow: 0 14px 34px var(--card-shadow-hover);
 }
 
 .writer-portrait {
@@ -398,47 +392,21 @@ h1 {
 }
 
 .writer-copy {
-  padding: 18px 20px 22px;
+  padding: 16px 14px 18px;
+  text-align: center;
 }
 
 .writer-copy h3 {
   margin: 0;
   font-family: var(--font-display);
-  font-size: 1.28rem;
+  font-size: 1.22rem;
   line-height: 1.25;
 }
 
-.writer-copy h3 a {
-  color: var(--ink);
-  text-decoration: none;
-}
-
-.writer-copy h3 a:hover {
-  color: var(--accent);
-}
-
-.writer-meta {
-  margin: 4px 0 0;
-  color: var(--accent);
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.writer-note {
-  margin: 10px 0 0;
-  color: var(--ink-soft);
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
-.writer-note cite {
-  font-style: italic;
-}
-
-.writer-note cite:lang(zh) {
-  font-style: normal;
+/* Source Serif has no CJK glyphs; use a Chinese serif with a real bold. */
+.writer-copy h3:lang(zh) {
+  font-family: "Songti SC", "STSong", "Noto Serif SC", "Source Han Serif SC", serif;
+  font-weight: 900;
 }
 
 a:focus-visible {
@@ -514,20 +482,21 @@ a:focus-visible {
     gap: 4px;
   }
 
-  .writer-card {
-    flex-direction: row;
+  .writer-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
   }
 
-  .writer-portrait {
-    flex: 0 0 104px;
-    aspect-ratio: auto;
-    min-height: 130px;
-    border-right: 1px solid var(--line);
-    border-bottom: 0;
+  .writer-card {
+    border-radius: 8px;
   }
 
   .writer-copy {
-    padding: 14px 16px;
+    padding: 10px 6px 12px;
+  }
+
+  .writer-copy h3 {
+    font-size: 0.95rem;
   }
 
   .news-item time {
