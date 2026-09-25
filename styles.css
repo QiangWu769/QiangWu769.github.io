@@ -325,6 +325,122 @@ h1 {
   color: var(--on-accent);
 }
 
+.writer-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.writer-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel);
+  box-shadow: 0 10px 28px var(--card-shadow);
+  transition: box-shadow 200ms ease, border-color 200ms ease;
+}
+
+.writer-card:hover {
+  border-color: var(--accent-border-soft);
+  box-shadow: 0 14px 34px var(--card-shadow-hover);
+}
+
+.writer-portrait {
+  margin: 0;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-bottom: 1px solid var(--line);
+  background: var(--page-bg-end);
+}
+
+.writer-portrait img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 22%;
+  filter: grayscale(1) contrast(1.04);
+}
+
+.writer-portrait-pessoa {
+  background: #3a78ee;
+}
+
+.writer-portrait-pessoa img {
+  filter: contrast(1.1) url(#pessoa-blue);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+/* The avatar is a small image on a flat green; fill the frame with that green
+   and centre the image instead of stretching it. */
+.writer-portrait-avatar {
+  display: grid;
+  place-items: center;
+  background: #83bf00;
+}
+
+.writer-portrait-avatar img {
+  width: 78%;
+  height: auto;
+  object-fit: contain;
+  filter: none;
+}
+
+.writer-copy {
+  padding: 18px 20px 22px;
+}
+
+.writer-copy h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.28rem;
+  line-height: 1.25;
+}
+
+.writer-copy h3 a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.writer-copy h3 a:hover {
+  color: var(--accent);
+}
+
+.writer-meta {
+  margin: 4px 0 0;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.writer-note {
+  margin: 10px 0 0;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.writer-note cite {
+  font-style: italic;
+}
+
+.writer-note cite:lang(zh) {
+  font-style: normal;
+}
+
 a:focus-visible {
   outline: 3px solid var(--accent);
   outline-offset: 4px;
@@ -396,6 +512,22 @@ a:focus-visible {
   .news-item {
     grid-template-columns: minmax(0, 1fr);
     gap: 4px;
+  }
+
+  .writer-card {
+    flex-direction: row;
+  }
+
+  .writer-portrait {
+    flex: 0 0 104px;
+    aspect-ratio: auto;
+    min-height: 130px;
+    border-right: 1px solid var(--line);
+    border-bottom: 0;
+  }
+
+  .writer-copy {
+    padding: 14px 16px;
   }
 
   .news-item time {
