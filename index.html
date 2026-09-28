@@ -42,7 +42,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap">
-    <link rel="stylesheet" href="styles.css?v=20260926-paper-8">
+    <link rel="stylesheet" href="styles.css?v=20260928-paper-9">
 
     <script type="application/ld+json">
       {
@@ -94,13 +94,26 @@
     <main class="page-shell">
       <header class="profile-panel" aria-labelledby="profile-name">
         <figure class="photo-card photo-card-main">
-          <img
-            src="assets/profile-web.jpg"
-            alt="Portrait of Qiang Wu"
-            width="641"
-            height="832"
-            decoding="async"
-          >
+          <picture>
+            <source
+              type="image/avif"
+              srcset="assets/profile-320.avif 320w, assets/profile-480.avif 480w, assets/profile-641.avif 641w"
+              sizes="(max-width: 520px) 96px, (max-width: 850px) 130px, (max-width: 1050px) 196px, 238px"
+            >
+            <source
+              type="image/webp"
+              srcset="assets/profile-320.webp 320w, assets/profile-480.webp 480w, assets/profile-641.webp 641w"
+              sizes="(max-width: 520px) 96px, (max-width: 850px) 130px, (max-width: 1050px) 196px, 238px"
+            >
+            <img
+              src="assets/profile-web.jpg"
+              alt="Portrait of Qiang Wu"
+              width="641"
+              height="832"
+              fetchpriority="high"
+              decoding="async"
+            >
+          </picture>
         </figure>
 
         <div class="profile-copy">
@@ -112,6 +125,7 @@
           <p class="profile-links">
             <a href="https://scholar.google.com/citations?user=qvabYLoAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer" aria-label="Qiang Wu on Google Scholar (opens in a new tab)">Google Scholar <span aria-hidden="true">↗</span></a>
           </p>
+          <p class="profile-email">qwu26 [at] buffalo.edu</p>
         </div>
 
         <nav class="section-nav" aria-label="Page sections">

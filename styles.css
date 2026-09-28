@@ -89,6 +89,8 @@ body {
   box-shadow: 0 2px 3px rgba(73, 51, 25, 0.1);
 }
 
+.photo-card picture { display: block; }
+
 .photo-card img {
   display: block;
   width: 100%;
@@ -128,6 +130,13 @@ h1 {
 }
 
 .profile-links a:hover { text-decoration-color: currentColor; }
+
+.profile-email {
+  margin: 2px 0 0;
+  color: var(--ink-soft);
+  font-size: 0.94rem;
+  font-variant-numeric: lining-nums;
+}
 
 .section-nav {
   display: grid;
@@ -354,6 +363,8 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
   .photo-card { padding: 4px; }
   h1 { font-size: 1.95rem; }
   .profile-role { font-size: 0.87rem; margin-top: 10px; }
+  .profile-links { margin-top: 6px; }
+  .profile-links a, .profile-email { font-size: 0.87rem; }
   .section-nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 14px; }
   .section-nav a { font-size: 0.87rem; gap: 5px; }
   .section-nav a span { font-size: 0.65rem; }
